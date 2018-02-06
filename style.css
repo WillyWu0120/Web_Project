@@ -1,0 +1,44 @@
+
+@font-face{
+		font-family: Microsoft JhengHei;
+		src: url("/fonts/msjhbd.ttc");
+}
+
+
+#body{
+	background-color: #EEE
+	font-family: Comic Sans MS, "Microsoft JhengHei", "DFKai-sb", Arial, serif;
+}
+
+#header{
+	background-color: #66CCFF;
+	color: purple;
+	text-align: center;
+	padding: 10px;
+	font-family: Comic Sans MS, "Microsoft JhengHei", "DFKai-sb", Arial, serif;
+}
+
+#main{
+	text-align: center;
+	float: center;
+	padding: 10px;
+}
+
+#footer{
+	clear:both;
+	padding: 10px;
+}
+
+#line{
+	clear:both;
+}
+
+.picture{
+	padding: 10px;
+}
+
+.selected{
+	font-weight:bold;	
+}
+
+
