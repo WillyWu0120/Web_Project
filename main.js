@@ -21,3 +21,7 @@ function Final(){
 	total = document.getElementById("TEXTBOX_ID").value;
     alert("您點的數量為: " + total);
 }
+
+function goBack() {
+    window.history.back();
+}

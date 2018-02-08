@@ -1,0 +1,79 @@
+<!doctype html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css"/> <!our own css>
+    <title>Launch 點餐系統</title>
+  </head>
+  <body>
+ 		<div class="container-fluid">
+			<div id="header">
+				<div>
+					<button onclick="goBack()" type="button" class="headerbutton1">上一頁</button>
+					<h1 class="header1">我的訂單</h1>
+					<a href="Payment.html"><button type="button" onclick="Final()" class="headerbutton2">結帳</button></a>
+				</div>
+			</div>
+			
+			<div id="main3">
+				<table class="table table-striped">
+					<thead style="text-align:center;">
+						<tr>
+							<td class="col-md-7point2">餐點</td>
+							<td class="col-md-2point4">等待時間</td>
+							<td class="col-md-2point4">小計</td>
+						</tr>
+					</thead>
+					<tbody style="text-align:center;">
+						<tr>
+							<td style="text-align:center;"><img src="pictures/steak.jpg" class="rounded" class="img-fluid" style="height:auto;width:50%;" alt="牛排"><figcaption>水岸什麼的牛排</figcaption></td>
+							<td>15分鐘</td>
+							<td>$240元*1</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;"><img src="pictures/Fish_Ball.jpeg" class="rounded" class="img-fluid" style="height:auto;width:50%;" alt="魚丸"><figcaption>淡水魚丸</figcaption></td>
+							<td>5分鐘</td>
+							<td>$140元*1</td>
+						</tr>
+						<tr>
+							<td style="text-align:center;"><img src="pictures/Dumplings.jpg" class="rounded" class="img-fluid" style="height:auto;width:50%;" alt="湯包"><figcaption>義大利清蒸湯包</figcaption></td>
+							<td>10分鐘</td>
+							<td>$410元*2</td>
+						</tr>						
+					</tbody>						
+				</table>
+			</div>
+			
+			<hr class="line"/>
+			<h3 style="text-align:right;font-weight:bold;padding-bottom:100px;">總金額: <span style="color: #FF6347">$1200元</span></h3>
+			
+			<div id = "footer" class= "row">
+				<div class = "column">
+					<a href="Main_Page.html"><button type="button" class="button">菜單</button></a>
+				</div>
+				<div class = "column">
+					<a href="Order_List.html"><button type="button" class="button">我的訂單</button></a>
+				</div>
+			</div>
+			
+		</div>
+  </body>
+</html>
+
+<!--	Bootstrap rows and columns example
+<div class="row">
+	<div class="col-md-4" style="background-color: #FF9999">Left</div>
+	<div class="col-md-4" style="background-color: Grey">Middle</div>
+	<div class="col-md-4" style="background-color: Blue">Right</div>
+</div>
+-->
