@@ -1,81 +1,83 @@
 <!doctype html>
 <html>
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+		<!-- Bootstrap -->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-	<link rel="stylesheet" type="text/css" href="style.css"/> <!our own css>
-	<script src="main.js"></script>
-    <title>Launch 點餐系統</title>
-  </head>
-  <body>
-    <div id="header">
-		<div>
-			<button onclick="goBack()" type="button" class="headerbutton1">上一頁</button>
-			<h1 class="header1">安多尼歐水岸歐式牛小排</h1>
-			<a href="Order_List(bootstrap_test).html"><button type="button" onclick="Final()" class="headerbutton2">加入訂單</button></a>
-		</div>
-	</div>
-	
-	<hr/>
-	
-	<div id = "main1">
-		<img src="pictures/steak.jpg" class="img-fluid" class="picture" alt="麵包">
-		<p style="font-weight:bold">食物介紹: 此牛小排為日本最高級別的出口牛肉，以醬油和迷迭香醃製成，全素食者可吃，份量為四人份。</p>
-	</div>	
-	
-	<hr class="line"/>
-	
-	<div id = "main2">
-		<div class="row">
-			<div class="column">
-				<h1>預計出餐時間</h1>
+		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+		<link rel="stylesheet" type="text/css" href="style.css"/> <!--our own css-->
+		<script src="main.js"></script>
+		<title>Launch 點餐系統</title>
+	</head>
+	<body>
+		<div class="container-fluid">
+			<div id="header">
+				<div>
+					<button onclick="goBack()" type="button" class="headerbutton1">上一頁</button>
+					<h1 class="header1">安多尼歐水岸歐式牛小排</h1>
+					<a href="Order_List(bootstrap_test).html"><button type="button" onclick="Final()" class="headerbutton2">加入訂單</button></a>
+				</div>
 			</div>
-			<div class="column">
-				<h1>15分鐘</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column">
-				<h1>價格</h1>
-			</div>
-			<div class="column">
-				<h1>$240元</h1>
-			</div>
-		</div>
-		<div class="row">
-			<div class="column">
-				<h1>數量</h1>
-			</div>
-			<div class="column" style="margin: auto;">
-				<input type="text" id="TEXTBOX_ID" name="count" style="text-align:center; height:auto; padding:0;" placeholder="0">
-				<table>
-					<tr>
-						<button onclick="add()" class="w3-button w3-circle w3-black">+</button>
-						<button onclick="minus()" class="w3-button w3-circle w3-black">-</button>
-					</tr>
-				</table>
+
+			<hr/>
+
+			<div id = "main1">
+				<img src="pictures/steak.jpg" class="img-fluid" class="picture" alt="麵包">
+				<p style="font-weight:bold">食物介紹: 此牛小排為日本最高級別的出口牛肉，以醬油和迷迭香醃製成，全素食者可吃，份量為四人份。</p>
 			</div>	
+
+			<hr class="line"/>
+
+			<div id = "main2">
+				<div class="row">
+					<div class="column">
+						<h1>預計出餐時間</h1>
+					</div>
+					<div class="column">
+						<h1>15分鐘</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h1>價格</h1>
+					</div>
+					<div class="column">
+						<h1>$240元</h1>
+					</div>
+				</div>
+				<div class="row">
+					<div class="column">
+						<h1>數量</h1>
+					</div>
+					<div class="column" style="margin: auto;">
+						<input type="text" id="TEXTBOX_ID" name="count" style="text-align:center; height:auto; padding:0;" placeholder="0">
+						<table>
+							<tr>
+								<button onclick="add()" class="w3-button w3-circle w3-black">+</button>
+								<button onclick="minus()" class="w3-button w3-circle w3-black">-</button>
+							</tr>
+						</table>
+					</div>	
+				</div>
+			</div>
+
+			<hr class="line"/>
+
+			<div id = "footer" class= "row">
+				<div class = "column">
+					<a href="Main_Page.html"><button type="button" class="button">菜單</button></a>
+				</div>
+				<div class = "column">
+					<a href="Order_List.html"><button type="button" class="button">我的訂單</button></a>
+				</div>
+			</div>
 		</div>
-	</div>
-	
-	<hr class="line"/>
-	
-	<div id = "footer" class= "row">
-		<div class = "column">
-			<a href="Main_Page.html"><button type="button" class="button">菜單</button></a>
-		</div>
-		<div class = "column">
-			<a href="Order_List.html"><button type="button" class="button">我的訂單</button></a>
-		</div>
-	</div>
-  </body>
+	</body>
 </html>
