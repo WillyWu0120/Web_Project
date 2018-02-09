@@ -72,6 +72,13 @@ body {
 	height: 100%;
 }
 
+.smallbutton{
+	 width:50%;
+	 text-align:center; 
+	 padding:0;
+	 margin:0 auto;
+}
+
 .column{
 	float: center;
 	text-align: center;
@@ -82,6 +89,14 @@ body {
 	display: table;
 	content: "";
 	clear: both;
+}
+
+.textbox{
+	text-align:center;
+	width: 100%;
+	height:auto;
+	margin:0 auto; 
+	padding:0;
 }
 
 
@@ -103,3 +118,6 @@ body {
 
 .col-md-7point2 {width: 60%;}
 .col-md-2point4 {width: 20%;}
+
+.col-md-6 {width: 50%;}
+.col-md-3 {width: 25%;}

@@ -11,8 +11,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 
-		<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-		<link rel="stylesheet" type="text/css" href="style.css"/> <!--our own css-->
+		<link rel="stylesheet" type="text/css" href="style.css"/>
 		<script src="main.js"></script>
 		<title>Launch 點餐系統</title>
 	</head>
@@ -21,7 +20,7 @@
 			<div id="header">
 				<div>
 					<button onclick="goBack()" type="button" class="headerbutton1">上一頁</button>
-					<h1 class="header1">安多尼歐水岸歐式牛小排</h1>
+					<h1 class="header1" style="font-weight:bold; font-size:100%; text-align: center;">安多尼歐水岸歐式牛小排</h1>
 					<a href="Order_List(bootstrap_test).html"><button type="button" onclick="Final()" class="headerbutton2">加入訂單</button></a>
 				</div>
 			</div>
@@ -30,42 +29,32 @@
 
 			<div id = "main1">
 				<img src="pictures/steak.jpg" class="img-fluid" class="picture" alt="麵包">
-				<p style="font-weight:bold">食物介紹: 此牛小排為日本最高級別的出口牛肉，以醬油和迷迭香醃製成，全素食者可吃，份量為四人份。</p>
+				<p style="font-weight:bold;">食物介紹: 此牛小排為日本最高級別的出口牛肉，以醬油和迷迭香醃製成，全素食者可吃，份量為四人份。</p>
 			</div>	
 
 			<hr class="line"/>
 
 			<div id = "main2">
-				<div class="row">
-					<div class="column">
-						<h1>預計出餐時間</h1>
-					</div>
-					<div class="column">
-						<h1>15分鐘</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="column">
-						<h1>價格</h1>
-					</div>
-					<div class="column">
-						<h1>$240元</h1>
-					</div>
-				</div>
-				<div class="row">
-					<div class="column">
-						<h1>數量</h1>
-					</div>
-					<div class="column" style="margin: auto;">
-						<input type="text" id="TEXTBOX_ID" name="count" style="text-align:center; height:auto; padding:0;" placeholder="0">
-						<table>
-							<tr>
-								<button onclick="add()" class="w3-button w3-circle w3-black">+</button>
-								<button onclick="minus()" class="w3-button w3-circle w3-black">-</button>
-							</tr>
-						</table>
-					</div>	
-				</div>
+				<table class="table">
+					<tbody style="text-align:center;">
+						<tr>
+							<td class="col-md-6" style="text-align:center;">預計出餐時間</td>
+							<td class="col-md-3"></td>
+							<td class="col-md-3">15分鐘</td>
+						</tr>
+						<tr>
+							<td class="col-md-6"style="text-align:center;">價格</td>
+							<td class="col-md-3"></td>
+							<td class="col-md-3">$240元</td>
+						</tr>
+	
+						<tr>
+							<td class="col-md-6" style="text-align:center;">數量</td>
+							<td class="col-md-3"><input type="text" id="TEXTBOX_ID" name="count" style="text-align:center; width: 100%; height:auto;margin:0 auto; padding:0;" placeholder="0"></td>
+							<td class="col-md-3"><button onclick="add()" class="btn btn-warning" style="width:50%;text-align:center; padding:0;margin:0 auto;">+</button><button onclick="minus()" class="btn btn-warning" style="width:50%;text-align:center; padding:0;margin:0 auto;">-</button></td>
+						</tr>					
+					</tbody>
+				</table>
 			</div>
 
 			<hr class="line"/>
